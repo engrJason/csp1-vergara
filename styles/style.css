@@ -53,6 +53,14 @@ h3{
 	max-width: 509px;
 }
 
+.img-bg{
+	background-color: #090909;
+}
+
+.hobbies-title{
+	text-align: left;
+}
+
 .hobies-title-body{
 	color: white;
 	text-align: left;

@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: black;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.1rem;
+}
+
+h1{
+	font-weight: 900;
+	font-size: 4rem;
+}
+
+h2{
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+h3{
+	color: gray;
+}
+
+.img-jason{
+	height: 400px;
+	width: 400px;
+}
+
+.intro-body{
+	width: 10rem;
+	text-align: center;
+}
+
+.tools-body{
+	text-align: center;
+	color: white
+}
+
+.img-run{
+	margin: auto;
+	max-height: 768px;
+	max-width: 509px;
+}
+
+.img-anime{
+	margin: auto;
+	max-height: 768px;
+	max-width: 509px;
+}
+
+.hobies-title-body{
+	color: white;
+	text-align: left;
+	font-weight: 700;
+}
+
+.hobbies-body{
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.1rem;
+	color: gray;
+}
+
+.about-me{
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-align: justify;
+	color: gray;
+}
+
+.logo{
+	height: 80px;
+	width: 80px;
+}
+
+.contact-me-body{
+	font-weight: 900;
+	font-size: 1.5rem;
+	text-align: center;
+	color: gray;
+}
+
+.ask-me{
+	font-weight: 900;
+	font-size: 2rem;
+	text-align: center;
+	color: white
+}
+
+.ask-me-body{
+	font-weight: 300;
+	font-size: 1.1rem;
+	text-align: center;
+	color: white;
+}
+
+
+

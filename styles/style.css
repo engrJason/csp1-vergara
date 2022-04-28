@@ -54,24 +54,25 @@ h3{
 }
 
 .img-bg{
-	background-color: #090909;
+	background-color: #0e0e0e;
 }
 
 .hobbies-title{
-	text-align: left;
+	text-align: center;
 }
 
 .hobies-title-body{
 	color: white;
-	text-align: left;
+	text-align: center;
 	font-weight: 700;
 }
 
 .hobbies-body{
-	text-align: left;
+	text-align: center;
 	font-weight: 700;
 	font-size: 1.1rem;
 	color: gray;
+	list-style-type: none;
 }
 
 .about-me{
@@ -106,6 +107,38 @@ h3{
 	text-align: center;
 	color: white;
 }
+
+@media (min-width: 992px){
+
+	.hobbies-title{
+		text-align: left;
+	}
+
+	.hobies-title-body{
+		color: white;
+		text-align: left;
+		font-weight: 700;
+	}
+
+	.hobbies-body{
+		text-align: left;
+		font-weight: 700;
+		font-size: 1.1rem;
+		color: gray;
+		list-style-type: none;
+	}
+}
+
+@media (max-width: 576px){
+
+		h1{
+		font-weight: 900;
+		font-size: 3.5rem;
+		padding-bottom: 1rem;
+	}
+}
+
+
 
 
 

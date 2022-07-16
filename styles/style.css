@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -6,97 +10,184 @@
 body{
 	background-color: black;
 	color: white;
-	font-family: 'Inter', sans-serif;
+	font-family: 'josefin sans', sans-serif;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.1rem;
 }
 
-h1{
-	font-weight: 900;
-	font-size: 4rem;
+.h1{
+	font-weight: 700;
+	font-size: 15vw;
+	text-align: center;
+	position: relative;
+	animation-name: view;
+  	animation-duration: 4s;
+  	animation-iteration-count: 1;
+  	animation-timing-function: linear;
+}
+
+@keyframes view {
+	0%   { opacity: 0;}
+	50%  { opacity: .5;}
+	100%  { opacity: 1;}
+}
+
+.start-button:hover, .start-button:visited, .start-button:link, .start-button:active{
+	color: #FFFFFF;
+	text-decoration: none;
+	border-style: solid;
+	border-radius: 2rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
 h2{
-	font-weight: 900;
-	font-size: 2rem;
+	font-weight: 700;
+	font-size: 3rem;
 }
 
 h3{
 	color: gray;
+	font-weight: 300;
+}
+
+.navbar-class{
+	font-weight: 700;
+	font-size: 1.2rem;
 }
 
 .img-jason{
-	height: 300px;
-	width: 300px;
+	height: 5rem;
+	width: 5rem;
+}
+
+.img-mac{
+	height: 25%;
+	width: 25%;
+	margin-top: 3rem;
+	object-fit: contain;
+	-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+	position: relative;
+	animation-name: view;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+@keyframes view {
+	0%   { opacity: 0;}
+	50%  { opacity: .5;}
+	100%  { opacity: 1;}
+}
+
+.intro-name{
+	margin-top: 22rem;
+	font-weight: 700;
+	font-size: 2rem;
+	position: relative;
+	animation-name: blink;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes blink {
+	0%   { opacity: 0;}
+	50%  { opacity: .5;}
+	100%  { opacity: 1;}
 }
 
 .intro-body{
-	width: 10rem;
-	text-align: center;
+	text-align: left;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: gray;
+	position: relative;
+	animation-name: view;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	}
+
+@keyframes view {
+	0%   { opacity: 0;}
+	50%  { opacity: .5;}
+	100%  { opacity: 1;}
+}
+
+.jason{
+  color: white;
+  font-size: 2rem;
+}
+
+.bg-tools{
+	background: url(./../images/macbook.jpg) no-repeat center fixed;
+  background-size: contain;
 }
 
 .tools-body{
 	text-align: center;
-	color: white
-}
-
-.img-run{
-	margin: auto;
-	max-height: 768px;
-	max-width: 509px;
-}
-
-.img-anime{
-	margin: auto;
-	max-height: 768px;
-	max-width: 509px;
-}
-
-.img-bg{
-	background-color: #0e0e0e;
-}
-
-.hobbies-title{
-	text-align: center;
-}
-
-.hobies-title-body{
 	color: white;
-	text-align: center;
 	font-weight: 700;
+	font-size: 2rem;
 }
 
-.hobbies-body{
-	text-align: center;
-	font-weight: 700;
-	font-size: 1.1rem;
-	color: gray;
-	list-style-type: none;
+.img-bg-tools{
+	margin: 1rem;
 }
 
 .about-me{
-	font-weight: 700;
+	font-weight: 300;
 	font-size: 1.5rem;
-	text-align: justify;
-	color: gray;
+	text-align: left;
+	color: lightgray;
 }
 
-.logo{
-	height: 80px;
-	width: 80px;
+.img-interest{
+	height: 50%;
+	width: 50%;
+	object-fit: contain;
+}
+
+.logo-intro{
+	height: 50px;
+	width: 50px;
+	object-fit: contain;
+	margin: 0.5rem;
+	margin-top: 5rem;
+}
+
+.logo-about-me{
+	height: 60px;
+	width: 60px;
+	object-fit: contain;
+	margin: 1rem;
+}
+
+.profile-picture{
+	border-radius: 13rem;
+	margin-bottom: 3rem;
+}
+
+.logo-footer{
+	height: 50px;
+	width: 50px;
+	object-fit: contain;
+	margin: 1rem;
 }
 
 .contact-me-body{
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 1.5rem;
 	text-align: center;
-	color: gray;
+	color: lightgray;
 }
 
 .ask-me{
-	font-weight: 900;
-	font-size: 2rem;
+	font-weight: 700;
+	font-size: 3rem;
 	text-align: center;
 	color: white
 }
@@ -105,40 +196,36 @@ h3{
 	font-weight: 300;
 	font-size: 1.1rem;
 	text-align: center;
-	color: white;
+	color: white;	
 }
 
-@media (min-width: 992px){
-
-	.hobbies-title{
-		text-align: left;
-	}
-
-	.hobies-title-body{
+.carousel-text{
+		font-weight: 700;
+		font-size: 1rem;
 		color: white;
-		text-align: left;
-		font-weight: 700;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	opacity: 0;
 	}
 
-	.hobbies-body{
-		text-align: left;
-		font-weight: 700;
-		font-size: 1.1rem;
-		color: gray;
-		list-style-type: none;
+@media (max-width: 991px){
+
+	.intro-body{
+		padding-top: 1rem;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.about-me{
+		text-align: center	;
 	}
 }
 
-@media (max-width: 576px){
-
-		h1{
-		font-weight: 900;
-		font-size: 3rem;
-		padding-bottom: 1rem;
-	}
+.bg-color-start{
+	background-image: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(31,26,26,1) 65%, rgba(67,16,67,1) 88%);
 }
 
-
-
-
-
+.bg-color-end{
+	background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,26,26,1) 65%, rgba(67,16,67,1) 88%);
+}
